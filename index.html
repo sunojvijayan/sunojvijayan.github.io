@@ -7,13 +7,15 @@
 
 <body style="padding-top:10%">
     <center>
-        <a id="link" href="dialogflow://open/?uid=Mom&amt=200"><img src="Download.png" /></a>
+        <a id="mylink" href=""><img src="Download.png" /></a>
     </center>
     <script>
         let urlParams = new URLSearchParams(window.location.search);
         let myParam = urlParams.get('name');
         alert(myParam);
         alert(urlParams.get('amt'));
+        var a = document.getElementById('mylink'); //or grab it by tagname etc
+        a.href = "dialogflow://open/?uid=" + myParam + "&amt=" + urlParams.get('name');
         //window.location.replace("dialogflow://open/?uid=Mom&amt=200");
         //document.getElementById("link").click();
         //$("#link")[0].click()
