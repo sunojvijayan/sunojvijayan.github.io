@@ -10,6 +10,9 @@
         <a id="link" href="dialogflow://open/?uid=Mom&amt=200"><img src="Download.png" /></a>
     </center>
     <script>
+        let urlParams = new URLSearchParams(window.location.search);
+        let myParam = urlParams.get('name');
+        alert(myParam);
         //window.location.replace("dialogflow://open/?uid=Mom&amt=200");
         //document.getElementById("link").click();
         //$("#link")[0].click()
