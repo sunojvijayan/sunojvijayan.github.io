@@ -4,7 +4,12 @@
 </head>
 
 <body>
-    <a href="dialogflow://open/?uid=Mom&amt=200">click</a>
+    <a id="link" href="dialogflow://open/?uid=Mom&amt=200">click</a>
+    <script>
+        //window.location.replace("http://stackoverflow.com");
+        document.getElementById("link").click();
+
+    </script>
 </body>
 
 </html>
