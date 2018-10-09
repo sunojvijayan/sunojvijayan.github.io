@@ -1,13 +1,16 @@
 <html>
 
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
 <head>
 </head>
 
 <body>
     <a id="link" href="dialogflow://open/?uid=Mom&amt=200">click</a>
     <script>
-        window.location.replace("dialogflow://open/?uid=Mom&amt=200");
+        //window.location.replace("dialogflow://open/?uid=Mom&amt=200");
         //document.getElementById("link").click();
+        $("#link")[0].click()
 
     </script>
 </body>
